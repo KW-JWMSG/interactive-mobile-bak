@@ -10,7 +10,7 @@ const init = async server => {
     server.use(bodyParser.urlencoded({ extended: true })) // support encoded bodies
     server.use(cookieParser())
     server.use(cors(
-        { origin: ["http://localhost:8080", "http://localhost:*"], credentials: true }
+        { origin: ["http://localhost:8080", "https://interactive.jwmsg.kr"], credentials: true }
     ))
         
     var sequelize = require('./models').sequelize;   // mysql 시퀄라이저 모델
